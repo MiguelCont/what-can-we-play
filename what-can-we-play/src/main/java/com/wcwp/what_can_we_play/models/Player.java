@@ -2,18 +2,18 @@ package com.wcwp.what_can_we_play.models;
 
 import java.util.ArrayList;
 
-public class User {
+public class Player {
+
     private int steamID;
     private String name;
     private String avatarImageURL;
     private ArrayList<Game> games;
-    private ArrayList<User> friends;
+    private ArrayList<Player> friends;
     
-    
-    public User() {
+    public Player() {
     }
     
-    public User(int steamID, String name, String avatarImageURL) {
+    public Player(int steamID, String name, String avatarImageURL) {
         this.steamID = steamID;
         this.name = name;
         this.avatarImageURL = avatarImageURL;
@@ -51,11 +51,11 @@ public class User {
         this.games = games;
     }
 
-    public ArrayList<User> getFriends() {
+    public ArrayList<Player> getFriends() {
         return friends;
     }
 
-    public void setFriends(ArrayList<User> friends) {
+    public void setFriends(ArrayList<Player> friends) {
         this.friends = friends;
     }
     
